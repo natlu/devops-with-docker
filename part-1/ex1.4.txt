@@ -1,0 +1,9 @@
+$ docker run -it --name webthing ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+Input website:
+helsinki.fi
+Searching..
+sh: 1: curl: not found
+
+$ docker rm webthing
+
+$ docker run -it --name webthing ubuntu sh -c 'apt-get update; apt-get install curl -y; echo Input website:; read website; echo Searching..; sleep 1; curl http://;'

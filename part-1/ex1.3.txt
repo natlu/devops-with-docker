@@ -1,0 +1,4 @@
+$ docker run -d -it devopsdockeruh/simple-web-service:ubuntu
+$ docker exec -it thirsty_matsumoto bash
+$ tail -f ./text.log
+'You can find the source code here: https://github.com/docker-hy'

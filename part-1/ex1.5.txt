@@ -1,0 +1,4 @@
+$ docker run -d -it devopsdockeruh/simple-web-service:alpine
+$ docker exec -it exciting_perlman bash
+$ tail -f ./text.log
+'You can find the source code here: https://github.com/docker-hy'
