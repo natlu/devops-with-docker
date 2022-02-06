@@ -1,0 +1,8 @@
+# Description
+Prints 'hello world'
+
+# Requirements
+python3.x
+
+# Usage
+python hello-world.py
