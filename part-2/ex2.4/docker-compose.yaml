@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  front:
+    image: ex-frontend
+    ports:
+      - 127.0.0.1:5000:5000
+  redis:
+    image: redis
+  back:
+    image: ex-backend
+    ports:
+      - 127.0.0.1:8080:8080
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
