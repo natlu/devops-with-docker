@@ -3,8 +3,6 @@ version: '3.8'
 services:
   front:
     image: ex-frontend
-    environment:
-      - REACT_APP_BACKEND_URL=http://127.0.0.1:80
   redis:
     image: redis
   db:
@@ -25,7 +23,6 @@ services:
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password
       - POSTGRES_DATABASE=my_db
-      - REQUEST_ORIGIN=http://127.0.0.1:80
   reverse-proxy:
     image: nginx:alpine
     volumes:
